@@ -17,7 +17,7 @@ const wishlistRouter = require("./routes/wishlist.router")
 const connectDB = require("./config/dbconfig");
 
 
-
+app.use(cors());
 app.use(express.json());
 console.log("Above DB connection")
 connectDB();
